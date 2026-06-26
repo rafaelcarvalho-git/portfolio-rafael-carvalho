@@ -1,0 +1,24 @@
+.skills-container {
+  display: flex;
+}
+
+.skills-box {
+  border-radius: 0.75rem;
+  border: 1px solid white;
+}
+
+.skill-badge {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
+  border-radius: 9999px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
