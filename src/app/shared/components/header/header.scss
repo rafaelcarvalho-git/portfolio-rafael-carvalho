@@ -6,42 +6,40 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -64px;
 }
 
 header h1 {
-  font-size: 4rem;
-  color: var(--text-primary);
-  line-height: 1.1;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  font-size: clamp(1.75rem, 6vw, 4.5rem);
 }
 
-header h2 {
-  font-size: 2rem;
-  color: var(--text-secondary);
-  font-weight: 400;
+.grid-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--fg) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--fg) 5%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 75%);
 }
 
-header p {
-  max-width: 600px;
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
+.hero-inner {
+  position: relative;
+  padding: 6rem 1.5rem 8rem;
 }
 
-header .header-buttons {
+.hero-hi {
   display: flex;
-  gap: 12px;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
-
-.btn {
-  font-weight: 500;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  color: var(--text-primary);
-  text-decoration: none;
-  border-radius: 8px;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.dash {
+  display: inline-block;
+  width: 8px;
+  height: 1px;
+  background: var(--primary);
 }
