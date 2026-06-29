@@ -32,17 +32,19 @@ export class Skills {
       ],
     },
     {
-      category: 'Backend',
-      items: ['Node.js', 'Express', 'Python', 'PHP', 'Strapi', 'MySQL', 'SQLite'],
+      category: 'Back-end & Database',
+      items: ['Node.js', 'Express', 'PHP', 'Strapi', 'MySQL', 'SQLite'],
     },
     {
-      category: 'DevOps & Tools',
+      category: 'DevOps, AI & Tools',
       items: [
         'Git',
         'GitLab',
         'CI/CD',
         'Jenkins',
         'SonarQube',
+        'Checkmarx',
+        'Jest',
         'GitHub Copilot',
         'ArgoCD',
         'Figma',
@@ -50,14 +52,7 @@ export class Skills {
     },
     {
       category: 'Process & Quality',
-      items: [
-        'Code Review',
-        'Clean Code',
-        'Scalability',
-        'Edge Case Analysis',
-        'Scrum',
-        'Kanban (BMAP)',
-      ],
+      items: ['Code Review', 'Clean Code', 'Scalability', 'Scrum', 'Kanban (BMAP)'],
     },
   ];
 }

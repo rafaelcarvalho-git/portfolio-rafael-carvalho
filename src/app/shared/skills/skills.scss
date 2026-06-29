@@ -31,14 +31,7 @@
   align-items: center;
   gap: 0.5rem;
 }
-.skill-card h3::before {
-  content: '';
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--primary);
-}
+
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
