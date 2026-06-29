@@ -1,71 +1,20 @@
-<section id="skills" class="skills-section" style="background-color: #070b14">
-  <div>
-    <h2 class="section-title">Technical <span>Skills</span></h2>
-    <div class="skills-container">
-      <div class="skills-box">
-        <h3 class="skill-box-title canva-text font-semibold text-indigo-400 mb-4">Frontend</h3>
-        <div class="flex flex-wrap gap-2">
-          <span class="skill-badge">Angular</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">React.js</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">TypeScript</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">RxJS</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">SCSS/SASS</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">HTML5</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">CSS3</span>
+<section id="skills" class="skills section band">
+  <div class="container">
+    <h2 class="section-heading">
+      Tech<span class="accent">Stack</span>
+      <span class="rule"></span>
+    </h2>
+    <div class="skills-grid" id="skills-grid">
+      @for (group of skills; track group.category) {
+        <div class="skill-card">
+          <h3>{{ group.category }}</h3>
+          <ul class="skill-tags">
+            @for (skill of group.items; track skill) {
+              <li>{{ skill }}</li>
+            }
+          </ul>
         </div>
-      </div>
-      <div class="skills-box">
-        <h3
-          data-template-id="skills-backend-title"
-          class="canva-text font-semibold text-emerald-400 mb-4"
-        >
-          Backend & Database
-        </h3>
-        <div class="flex flex-wrap gap-2">
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Node.js</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Express</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Python</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">PHP</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">MySQL</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">SQLite</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Strapi</span>
-        </div>
-      </div>
-      <div class="skills-box">
-        <h3
-          data-template-id="skills-arch-title"
-          class="canva-text font-semibold text-amber-400 mb-4"
-        >
-          Arquitetura & Código
-        </h3>
-        <div class="flex flex-wrap gap-2">
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Code Review</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Clean Code</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm"
-            >Edge Case Analysis</span
-          >
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Scalability</span>
-        </div>
-      </div>
-      <div class="skills-box">
-        <h3
-          data-template-id="skills-tools-title"
-          class="canva-text font-semibold text-rose-400 mb-4"
-        >
-          Tools & DevOps
-        </h3>
-        <div>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">GitHub Copilot</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Git</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">CI/CD</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Jenkins</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">SonarQube</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Scrum</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Kanban</span>
-          <span class="skill-badge bg-gray-700 px-3 py-1 rounded-full text-sm">Figma</span>
-        </div>
-      </div>
+      }
     </div>
   </div>
 </section>

@@ -1,28 +1,81 @@
-.skills-container {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
+/* SKILLS */
+
+.skills .section-heading .accent {
+  font-family: var(--font-display) !important;
+  font-size: clamp(1.5rem, 3vw, 1.875rem) !important;
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+.skill-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  transition: border-color 0.2s;
+}
+.skill-card:hover {
+  border-color: color-mix(in oklab, var(--primary) 40%, transparent);
+}
+.skill-card h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
   display: flex;
-  background-color: red;
+  align-items: center;
+  gap: 0.5rem;
+}
+.skill-card h3::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+.skill-tags li {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  background: var(--surface-2);
+  color: var(--muted);
 }
 
-.skills-box {
-  border-radius: 8px;
-  border: 1px solid white;
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 }
-
-.skill-badge {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
-  border-radius: 9999px;
-  color: var(--text-primary);
-  font-weight: 500;
+@media (max-width: 640px) {
+  .btn-outline-sm {
+    display: none;
+  }
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section {
+    padding: 4rem 0;
+  }
 }
