@@ -22,6 +22,7 @@ export class Skills {
         'RxJS',
         'TypeScript',
         'JavaScript',
+        'Axios',
         'SCSS / SASS',
         'Styled Components',
         'Material UI',
