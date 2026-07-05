@@ -1,18 +1,19 @@
 <section id="experience" class="experience section">
-  <div class="container">
+  <div class="container narrow">
     <h2 class="section-heading">
-      Professional<span class="accent">Experience</span>
+      Professional <span class="accent">Experience</span>
       <span class="rule"></span>
     </h2>
     <ol class="timeline" id="timeline">
       @for (exp of experiences; track exp.company) {
         <li class="timeline-item">
-          <div class="timeline-info">
-            <h3 class="role">{{ exp.role }}</h3>
-            <span class="company">{{ exp.company }}</span>
-            <span class="period">{{ exp.period }}</span>
+          <div class="tl-head">
+            <h3>
+              {{ exp.role }} <span class="at">@ {{ exp.company }}</span>
+            </h3>
+            <span class="tl-period">{{ exp.period }}</span>
           </div>
-          <ul class="timeline-bullets">
+          <ul class="tl-bullets">
             @for (bullet of exp.bullets; track $index) {
               <li>{{ bullet }}</li>
             }
