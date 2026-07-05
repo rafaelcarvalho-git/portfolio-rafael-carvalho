@@ -40,7 +40,7 @@ export class Projects {
     {
       name: 'SisCert E2S',
       desc: 'Operational portal for lifecycle control and expiration tracking of digital certificates.',
-      stack: ['HTML', 'SCSS', 'JavaScript', 'PHP', 'MySQL'],
+      stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
       repo: 'https://github.com/rafaelcarvalho-git/siscert-e2s',
       link: 'https://siscert-e2s.vercel.app/',
       icon: `
