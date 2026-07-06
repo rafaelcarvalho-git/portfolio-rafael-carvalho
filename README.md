@@ -1,59 +1,43 @@
-# PortfolioRafaelCarvalho
+<div align="center">
+  # 👨‍💻 Personal Portfolio
+  
+  **Professional portfolio developed with Angular to showcase skills, experience, and projects.**
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.4.
+  [![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)](https://sass-lang.com/)
 
-## Development server
+</div>
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🚀 About the Project
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+This is a personal portfolio website built with **Angular**, designed to highlight professional trajectory and technical expertise. The project follows a modular component-based architecture to organize sections such as experience, skills, and a project gallery.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🌐 Live Demo
 
-```bash
-ng generate component component-name
-```
+Acesse a aplicação em produção e teste as funcionalidades em tempo real:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🔗 **[Visitar Portfolio Dev Rafael Carvalho](https://rafael-carvalho-dev.vercel.app/)**
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## ✨ Key Features
 
-To build the project run:
+- 💼 **Professional Experience:** Dedicated section detailing background and career history.
+- 🛠️ **Skillset Showcase:** Visual representation of technical competencies and expertise.
+- 📁 **Project Gallery:** Area focused on highlighting completed technical work.
+- 🏗️ **Angular Architecture:** Implementation of modular components to ensure a scalable and maintainable codebase.
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🛠️ Tech Stack
 
-## Running unit tests
+- **Framework:** [Angular](https://angular.io/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [SCSS](https://sass-lang.com/)
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
