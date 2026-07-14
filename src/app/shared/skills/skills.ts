@@ -46,6 +46,8 @@ export class Skills {
         'SonarQube',
         'Checkmarx',
         'Jest',
+        'AWS',
+        'S3',
         'GitHub Copilot',
         'ArgoCD',
         'Figma',
